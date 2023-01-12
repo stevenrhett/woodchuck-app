@@ -10,12 +10,13 @@ function App() {
 
     return (<div>
 
-{/*<TeamPage />*/}
-        {/*<Dashboard />*/}
-{/*<Services />*/}
+
+        <Dashboard />
+<Services />
         <ProjectsPhoto />
-        {/*<ContactPage />*/}
-        {/*<ContentSection />*/}
+        <ContactPage />
+        <TeamPage />
+        <ContentSection />
     </div>)
 
 }
