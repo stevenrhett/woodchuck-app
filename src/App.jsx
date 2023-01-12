@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './index.css'
 import Dashboard from "./dashboard.jsx";
 import ContactPage from "./contactPage.jsx";
@@ -9,8 +9,9 @@ function App() {
 
 
         <Dashboard />
-        <ContentSection />
+
         <ContactPage />
+        <ContentSection />
     </div>)
 
 }

@@ -1,4 +1,3 @@
-/** @type {DefaultColors} */
 const colors = require('tailwindcss/colors')
 
 module.exports = {
@@ -9,7 +8,7 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                '': colors,
+                gray: colors.gray,
                 sky: colors.sky,
                 cyan: colors.cyan,
             },
