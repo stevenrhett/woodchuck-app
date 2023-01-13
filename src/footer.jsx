@@ -1,33 +1,9 @@
 import React from 'react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-
+import './index.css';
+import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 
 const footerNavigation = {
-    solutions: [
-        // { name: 'Marketing', href: '#' },
-        // { name: 'Analytics', href: '#' },
-        // { name: 'Commerce', href: '#' },
-        // { name: 'Insights', href: '#' },
-    ],
-    support: [
-        // { name: 'Pricing', href: '#' },
-        // { name: 'Documentation', href: '#' },
-        // { name: 'Guides', href: '#' },
-        // { name: 'API Status', href: '#' },
-    ],
-    company: [
-        // { name: 'About', href: '#' },
-        // { name: 'Blog', href: '#' },
-        // { name: 'Jobs', href: '#' },
-        // { name: 'Press', href: '#' },
-        // { name: 'Partners', href: '#' },
-    ],
-    legal: [
-        // { name: 'Claim', href: '#' },
-        // { name: 'Privacy', href: '#' },
-        // { name: 'Terms', href: '#' },
-    ],
     social: [
         {
             name: 'Facebook',
@@ -60,7 +36,8 @@ const footerNavigation = {
             href: '#',
             icon: (props) => (
                 <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                    <path
+                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
                 </svg>
             ),
         },
@@ -83,95 +60,51 @@ const footerNavigation = {
 
 export default function Footer() {
     return (
-<div>
-        <footer className="bg-gray-800" aria-labelledby="footer-heading">
-    <h2 id="footer-heading" className="sr-only">
-        Footer
-    </h2>
-    <div className="mx-auto max-w-md py-12 px-6 sm:max-w-3xl sm:py-24 lg:max-w-7xl lg:px-8">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-            <div className="space-y-8 xl:col-span-1">
+        <div>
+            <footer className="bg-gray-800" aria-labelledby="footer-heading">
+                <h2 id="footer-heading" className="sr-only">
+                    Footer
+                </h2>
+
+                <div className="mx-auto max-w-md py-12 px-6 sm:max-w-3xl sm:py-24 lg:max-w-7xl lg:px-8">
+                    <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+                        <div className="space-y-8 xl:col-span-1">
 
 
-                <div className="flex justify-center space-x-6 ">
-                    {footerNavigation.social.map((item) => (
-                        <a key={item.name} href={item.href} className="text-warm-gray-400 hover:text-warm-gray-500">
-                            <span className="sr-only">{item.name}</span>
-                            <item.icon className="h-6 w-6" aria-hidden="true" />
-                        </a>
-                    ))}
-                </div>
-            </div>
-            <div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-                <div className="md:grid md:grid-cols-2 md:gap-8">
-                    <div>
-                        <h3 className="text-white font-medium text-warm-gray-700">Solutions</h3>
-                        <ul role="list" className="mt-4 space-y-4">
-                            {footerNavigation.solutions.map((item) => (
-                                <li key={item.name}>
-                                    <a href={item.href} className="text-base text-warm-gray-500 hover:text-warm-gray-900">
-                                        {item.name}
+                            <div className="flex justify-center space-x-6 ">
+                                {footerNavigation.social.map((item) => (
+                                    <a key={item.name} href={item.href}
+                                       className="text-white hover:text-red-100">
+                                        <span className="sr-only">{item.name}</span>
+                                        <item.icon className="h-6 w-6" aria-hidden="true"/>
                                     </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className="mt-12 md:mt-0">
-                        <h3 className="text-white font-medium text-warm-gray-700">Support</h3>
-                        <ul role="list" className="mt-4 space-y-4">
-                            {footerNavigation.support.map((item) => (
-                                <li key={item.name}>
-                                    <a href={item.href} className="text-base text-warm-gray-500 hover:text-warm-gray-900">
-                                        {item.name}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </div>
-                <div className="md:grid md:grid-cols-2 md:gap-8">
-                    <div>
-                        <h3 className="text-white font-medium text-warm-gray-700">Company</h3>
-                        <ul role="list" className="mt-4 space-y-4">
-                            {footerNavigation.company.map((item) => (
-                                <li key={item.name}>
-                                    <a href={item.href} className="text-base text-warm-gray-500 hover:text-warm-gray-900">
-                                        {item.name}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className="mt-12 md:mt-0">
-                        <h3 className="text-white font-medium text-warm-gray-700">Legal</h3>
-                        <ul role="list" className="mt-4 space-y-4">
-                            {footerNavigation.legal.map((item) => (
-                                <li key={item.name}>
-                                    <a href={item.href} className="text-base text-warm-gray-500 hover:text-warm-gray-900">
-                                        {item.name}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="mt-10 text-white border-t border-warm-gray-200 pt-8">
-            <h3 className="text-center text-white text-xl text-bold">Woodchuck Stump Grinding</h3>
-            <p className="text-center text-white text-warm-gray-400 xl:text-center">
-                Weymouth, MA 02191
-                (781) 650-1119
-            </p>
-        </div>
-        <div className="mt-2 border-warm-gray-400 pt-8">
-            <p className="text-center text-white xl:text-center">
-                &copy; 2023 Woodchuck Stump Grinding, Inc. All rights reserved.
-            </p>
-        </div>
-    </div>
-</footer>
-</div>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+                            <div className="md:grid md:grid-cols-2 md:gap-8">
 
-);
+                            </div>
+                            <div className="md:grid md:grid-cols-2 md:gap-8">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="mt-10 text-white border-t border-warm-gray-200 pt-8">
+                        <h3 className="text-center text-white text-xl text-bold">Woodchuck Stump Grinding</h3>
+                        <p className="text-center text-white text-warm-gray-400 xl:text-center">
+                            Weymouth, MA 02191
+                            (781) 650-1119
+                        </p>
+                    </div>
+                    <div className="mt-2 border-warm-gray-400 pt-8">
+                        <p className="text-center text-white xl:text-center">
+                            &copy; 2023 Woodchuck Stump Grinding, Inc. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    );
 };

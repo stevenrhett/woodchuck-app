@@ -1,12 +1,13 @@
 import React from 'react';
 import {TownList} from "./towns.jsx";
 import Footer from "./footer.jsx";
+import TownMap from "./townMap.jsx";
 
 let towns = [{town: 'Abington'}, {town: 'Braintree'}, {town: 'Canton'}, {town: 'Carver'}, {town: 'Cohasset'}, {town: 'Duxbury'}, {town: 'Halifax'}, {town: 'Hanson'}, {town: 'Hanover'}, {town: 'Hingham'}, {town: 'Holbrook'}, {town: 'Hull'}, {town: 'Marshfield'}, {town: 'Milton'}, {town: 'Norwell'}, {town: 'Pembroke'}, {town: 'Plympton'}, {town: 'Quincy'}, {town: 'Randolph'}, {town: 'Rockland'}, {town: 'Scituate'}, {town: 'Weymouth'}, {town: 'Whitman'},];
 export default function contentSection() {
     return (<div className="relative overflow-hidden bg-gray-800 py-16">
         <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
-            <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
+            <div className="relative mx-auto h-full max-w-prose text-white text-lg" aria-hidden="true">
                 <svg
                     className="absolute top-12 left-full translate-x-32 transform"
                     width={804}
@@ -41,6 +42,7 @@ export default function contentSection() {
                 height={873}
             />
         </figure>
+        <TownMap />
         <div className="relative px-6 lg:px-8">
             <div className="mx-auto max-w-prose text-lg">
                 <h1>
@@ -51,7 +53,7 @@ export default function contentSection() {
                 </h1>
             </div>
             <div
-                className="prose prose-lg prose-indigo mx-auto mt-6 text-gray-500 ">
+                className="prose prose-lg prose-indigo mx-auto mt-6 text-white">
 
                 <ul className="text-white columns-3 space-y-6">
                     <TownList towns={towns}/>
@@ -59,9 +61,8 @@ export default function contentSection() {
             </div>
 
 
-
         </div>
-        <Footer />
+        <Footer/>
     </div>)
 }
 

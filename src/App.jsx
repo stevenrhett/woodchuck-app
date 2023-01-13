@@ -6,17 +6,20 @@ import ContentSection from "./contentSection.jsx";
 import TeamPage from "./teamPage.jsx";
 import Services from "./services.jsx";
 import ProjectsPhoto from "./projectsPhoto.jsx";
+import SlideOver from "./slideOver.jsx";
+
 function App() {
 
     return (<div>
 
 
-        <Dashboard />
-<Services />
-        <ProjectsPhoto />
-        <ContactPage />
-        <TeamPage />
-        <ContentSection />
+        <Dashboard/>
+        <SlideOver />
+        <Services/>
+        <ProjectsPhoto/>
+        <ContactPage/>
+        <TeamPage/>
+        <ContentSection/>
     </div>)
 
 }
