@@ -191,10 +191,11 @@ export default function Dashboard() {
                                 <p className="mt-4 text-center text-lg leading-6 text-white sm:mt-6">
                                 <span className="mt-2 mb-4 block text-center text-xl text-white font-medium">
                                 Call us today we can beat their price!
+                                    <p className="font-bold text-2xl">Call Now</p>
                                 </span>
                                 </p>
-                                <div className="btn glass text-center font-large just-items-center"><em>Call
-                                    Now 781-650-1119</em>
+                                <div className="btn glass text-center font-large just-items-center">
+                                    <a href="tel:7816501119"><b>781-650-1119</b></a>
                                 </div>
                             </div>
                         {/* /End replace */}

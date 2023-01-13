@@ -19,7 +19,7 @@ const TownMap = () => {
                 <div className="card-body">
                     <h2 className="card-title text-3xl">If your on this map you are in luck!</h2>
                     <p className="card-text"></p>
-                    <div className="card-actions justify-end">
+                    <div className="card-actions justify-center">
                         <button className="btn btn-primary">Call Now</button>
                     </div>
                 </div>

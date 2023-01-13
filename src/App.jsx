@@ -6,7 +6,7 @@ import ContentSection from "./contentSection.jsx";
 import TeamPage from "./teamPage.jsx";
 import Services from "./services.jsx";
 import ProjectsPhoto from "./projectsPhoto.jsx";
-import TownMap from "./townMap.jsx";
+import SlideOver from "./slideOver.jsx";
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
 
 
         <Dashboard/>
-        <TownMap />
+        <SlideOver />
         <Services/>
         <ProjectsPhoto/>
         <ContactPage/>
