@@ -1,6 +1,7 @@
 import React from 'react';
 import {TownList} from "./towns.jsx";
 import TownMap from "./townMap.jsx";
+import {Route} from "react-router-dom";
 
 let towns = [{town: 'Abington'}, {town: 'Braintree'}, {town: 'Canton'}, {town: 'Carver'}, {town: 'Cohasset'}, {town: 'Duxbury'}, {town: 'Halifax'}, {town: 'Hanson'}, {town: 'Hanover'}, {town: 'Hingham'}, {town: 'Holbrook'}, {town: 'Hull'}, {town: 'Marshfield'}, {town: 'Milton'}, {town: 'Norwell'}, {town: 'Pembroke'}, {town: 'Plympton'}, {town: 'Quincy'}, {town: 'Randolph'}, {town: 'Rockland'}, {town: 'Scituate'}, {town: 'Weymouth'}, {town: 'Whitman'},];
 function contentSection() {
@@ -42,7 +43,9 @@ function contentSection() {
                 height={873}
             />
         </figure>
-        <TownMap />
+        <Route path={'/towns'}>
+            {<TownMap />}
+        </Route>
         <div className="relative px-6 lg:px-8">
             <div className="mx-auto min-w-prose text-lg">
                 <h1>
