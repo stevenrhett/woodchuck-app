@@ -1,7 +1,7 @@
 import './index.css'
 import React from 'react'
 import Dashboard from "./dashboard.jsx";
-import {Route, Routes,} from "react-router-dom";
+import {Outlet, Route, Routes,} from "react-router-dom";
 import Footer from "./footer.jsx";
 import TeamPage from "./teamPage.jsx";
 import Header from "./Header.jsx";
@@ -15,11 +15,14 @@ function App() {
 
     return (<div>
         <Header/>
-
+<Dashboard />
         <Routes>
-            <Route path={'/'}
-                   element={<Dashboard/>}
-            />,
+            {/*<Route path={'/'}*/}
+            {/*       element={<Dashboard/>}*/}
+            {/*/>,*/}
+            <Route path={'/maps'}
+                     element={<ContentSection/>}
+                   />,exact={true}
             <Route path={'/services'}
                    element={<Services/>}
             />,

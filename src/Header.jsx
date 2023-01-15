@@ -9,7 +9,7 @@ export default function Header() {
     let activeClassName = {textDecoration: "", color: "white", fontWeight: "bold", fontSize: "1.5rem"};
     return (
         <Disclosure as="nav" className="bg-gray-800">
-            {({open}) => (<div className="header">
+            {() => (<div className="header">
                 <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
                     <div className="relative flex h-16 items-center justify-between">
                         <div className="flex items-center px-2 lg:px-0">
@@ -21,7 +21,8 @@ export default function Header() {
                                     <div
                                         className="rounded-md bg-gray-800 space-x-4 px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">
                                         <NavLink to='/maps' style={({isActive}) =>
-                                            isActive ? activeStyle : undefined}
+                                            isActive ? activeStyle : undefined
+                                        }
                                         >
                                             Maps
                                         </NavLink>
@@ -105,34 +106,45 @@ export default function Header() {
                 <Disclosure.Panel className="lg:hidden">
                     <div className="space-y-1 px-2 pt-2 pb-3">
                         {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                        <NavLink to='/team'><Disclosure.Button
-                            as="a"
-                            href='/team'
-                            className="block rounded-md bg-gray-600 px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-600 hover:text-white"
-                        >Team
 
-                       </Disclosure.Button> </NavLink>
-                        <NavLink to='/projects'><Disclosure.Button
+                        <Disclosure.Button
+                            as="a"
+                            href='/maps'
+                            className="block rounded-md bg-gray-600 px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-600 hover:text-white"
+                        ><NavLink to='/maps' style={({isActive}) =>
+                            isActive ? activeClassName : undefined
+                        }
+                        >Maps
+                        </NavLink>
+                        </Disclosure.Button>
+                        <Disclosure.Button
                             as="a"
                             href='/projects'
                             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-600 hover:text-white"
+                        ><NavLink to='/team' className={({isActive}) =>
+                            isActive ? activeClassName : undefined
+                        }
                         >
-                            Projects
-                        </Disclosure.Button></NavLink>
-                        <NavLink to='/photos'><Disclosure.Button
+                            Team
+                        </NavLink>
+                        </Disclosure.Button>
+                        <Disclosure.Button
                             as="a"
                             href='/maps'
                             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-600 hover:text-white"
                         >
-                            Maps
-                        </Disclosure.Button></NavLink>
-                        <NavLink to='/contactus'><Disclosure.Button
+                            <NavLink to='/projects'>{({isActive}) => isActive ? activeClassName : undefined
+                            }
+                                Projects
+                            </NavLink>
+                        </Disclosure.Button>
+                        <Disclosure.Button
                             as="a"
-                            href='/contactus'
+                            href="/contactus"
                             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-600 hover:text-white"
-                        >
-                            Contact Us
-                        </Disclosure.Button></NavLink>
+                        > <NavLink to='/contactus'>{({isActive}) => isActive ? activeClassName : undefined
+                        } Contact Us</NavLink>
+                        </Disclosure.Button>
                     </div>
                     <div className="border-t border-gray-700 pt-4 pb-3">
                         <div className="flex items-center px-5">
