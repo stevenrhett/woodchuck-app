@@ -37,7 +37,7 @@ export default function Services() {
                 </div>
                 <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
                     <img
-                        src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"
+                        src="https://i.imgur.com/4k3JmG9.png"
                         alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
                         className="rounded-lg bg-gray-100"
                     />

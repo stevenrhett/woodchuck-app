@@ -1,6 +1,5 @@
 import React from 'react';
 import {TownList} from "./towns.jsx";
-import Footer from "./footer.jsx";
 import TownMap from "./townMap.jsx";
 
 let towns = [{town: 'Abington'}, {town: 'Braintree'}, {town: 'Canton'}, {town: 'Carver'}, {town: 'Cohasset'}, {town: 'Duxbury'}, {town: 'Halifax'}, {town: 'Hanson'}, {town: 'Hanover'}, {town: 'Hingham'}, {town: 'Holbrook'}, {town: 'Hull'}, {town: 'Marshfield'}, {town: 'Milton'}, {town: 'Norwell'}, {town: 'Pembroke'}, {town: 'Plympton'}, {town: 'Quincy'}, {town: 'Randolph'}, {town: 'Rockland'}, {town: 'Scituate'}, {town: 'Weymouth'}, {town: 'Whitman'},];
