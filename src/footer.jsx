@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import {Link} from "react-router-dom";
 
 const footerNavigation = {
     social: [{
@@ -66,15 +67,15 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="mt-10 -mb-10 text-white border-t border-warm-gray-200 pt-8">
-                        <h3 className="text-center text-white text-xl text-bold">Woodchuck Stump Grinding</h3>
+                        <h3 className="text-center text-white text-2xl text-bold">Woodchuck Stump Grinding</h3>
                          <p className="text-center text-warm-gray-400 xl:text-center">
                             Weymouth, MA 02191
-                             <a href="tel:7816501119">(781) 650-1119</a>
+                          <Link href="tel:7816501119">(781) 650-1119</Link>
                         </p>
                     </div>
-                    <div className="mt-2 -mb-6 border-warm-gray-400 pt-8">
+                        <div className="mt-12 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3">
                         <p className="text-center text-white xl:text-center">
-                            &copy; 2023 Woodchuck Stump Grinding, Inc. All rights reserved.
+                            &copy; 2023  All rights reserved
                         </p>
                     </div>
                 </div>

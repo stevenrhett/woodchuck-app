@@ -34,11 +34,11 @@ export default function Header() {
                                             Team
                                         </NavLink>
 
-                                        <NavLink to='/projects'>{({isActive}) => (
+                                        <NavLink to='/hero'>{({isActive}) => (
                                             <span
                                                 className={isActive ? activeClassName : undefined}
                                             >
-                                        Projects
+                                    Hero
                                         </span>
                                         )}
                                         </NavLink>
@@ -133,9 +133,9 @@ export default function Header() {
                             href='/maps'
                             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-600 hover:text-white"
                         >
-                            <NavLink to='/projects'>{({isActive}) => isActive ? activeClassName : undefined
+                            <NavLink to='/hero'>{({isActive}) => isActive ? activeClassName : undefined
                             }
-                                Projects
+                               Hero
                             </NavLink>
                         </Disclosure.Button>
                         <Disclosure.Button

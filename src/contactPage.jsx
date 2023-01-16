@@ -65,7 +65,7 @@ export default function ContactPage() {
                 </div>
             </div>
         </div>
-        <ContactPage />
+
     </div>)
 
 }
