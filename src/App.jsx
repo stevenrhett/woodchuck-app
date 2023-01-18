@@ -10,34 +10,34 @@ import ProjectsPhoto from "./projectsPhoto.jsx";
 import ContactPage from "./contactPage.jsx";
 import Services from "./services.jsx";
 import NotFound from "./notFound.jsx";
+import Reviews from "./reviews.jsx";
 
 function App() {
 
     return (<div>
         <Header/>
-
         <Routes>
             <Route path={'/'}
                    element={<Dashboard/>}
             />,
-            <Route path={'/services'}
-                   element={<Services/>}
-            />,
-            <Route path={'/team'}
-                   element={<TeamPage/>}
-            />,
-
-            <Route path={'/projects'}
-                   element={<ProjectsPhoto/>}
-            />,
-            <Route path={'/photos'}
-                   element={<ProjectsPhoto/>}
-            />,
-            <Route path={'/contactus'}
-                   element={<ContactPage/>}
-            />,
-            <Route path={'/maps'}
-                   element={<ContentSection/>}
+        {/*    <Route path={'/maps'}*/}
+        {/*           element={<ContentSection/>}*/}
+        {/*    />,*/}
+        {/*    <Route path={'/services'}*/}
+        {/*           element={<Services/>}*/}
+        {/*    />,*/}
+        {/*    <Route path={'/team'}*/}
+        {/*           element={<TeamPage/>}*/}
+        {/*    />,*/}
+        {/* */}
+        {/*    <Route path={'/photos'}*/}
+        {/*           element={<ProjectsPhoto/>}*/}
+        {/*    />,*/}
+        {/*    <Route path={'/contactus'}*/}
+        {/*           element={<ContactPage/>}*/}
+        {/*    />,*/}
+            <Route path={'/reviews'}
+                   element={<Reviews/>}
             />,
             <Route path={'*'}
                    element={<NotFound/>}
@@ -45,6 +45,7 @@ function App() {
 
         </Routes>
         <Footer/>
+
     </div>)
 
 }

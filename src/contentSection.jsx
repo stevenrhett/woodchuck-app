@@ -3,6 +3,7 @@ import {TownList} from "./towns.jsx";
 import TownMap from "./townMap.jsx";
 
 let towns = [{town: 'Abington'}, {town: 'Braintree'}, {town: 'Canton'}, {town: 'Carver'}, {town: 'Cohasset'}, {town: 'Duxbury'}, {town: 'Halifax'}, {town: 'Hanson'}, {town: 'Hanover'}, {town: 'Hingham'}, {town: 'Holbrook'}, {town: 'Hull'}, {town: 'Marshfield'}, {town: 'Milton'}, {town: 'Norwell'}, {town: 'Pembroke'}, {town: 'Plympton'}, {town: 'Quincy'}, {town: 'Randolph'}, {town: 'Rockland'}, {town: 'Scituate'}, {town: 'Weymouth'}, {town: 'Whitman'},];
+
 function contentSection() {
 
     return (<div className="relative overflow-hidden bg-gray-800 py-16">
@@ -42,7 +43,9 @@ function contentSection() {
                 height={873}
             />
         </figure>
-        <TownMap />
+
+        <TownMap/>
+
         <div className="relative px-6 lg:px-8">
             <div className="mx-auto min-w-prose text-lg">
                 <h1>
@@ -65,6 +68,7 @@ function contentSection() {
         {/*<Footer/>*/}
     </div>)
 }
+
 export default contentSection;
 
 

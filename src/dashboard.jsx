@@ -1,9 +1,14 @@
 import timatwork from "./assets/timatwork.png";
-import React from "react";
-
-
+import React, {useRef, useState} from "react";
+import phone from "./assets/phone.svg";
+import text from "./assets/text-message.svg"
+import {Link} from "react-router-dom";
 
 export default function Dashboard() {
+
+    const [open, setOpen] = useState(true)
+
+    const cancelButtonRef = useRef(null)
     const clickHandler = () => {
         console.log("clicked");
     }
@@ -11,37 +16,59 @@ export default function Dashboard() {
         <div className="container  mx-auto sm:px-6 bg-gray-800 lg:px-8 bg-gray-800">
             <header className="py-10 bg-gray-800">
                 <div className="mx-auto bg-gray-800 max-w-7xl px-4 sm:px-6 bg-gray-800 lg:px-8 bg-gray-800">
-
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">test
+                    </div>
                 </div>
             </header>
             <main className="-mt-32 bg-gray-800 border border-gray-800">
-                <div
-                    className="mx-auto  bg-gray-800 border border-gray-800 max-w-7xl px-4 pb-12 sm:px-6 bg-gray-800 lg:px-8">
-                    <div className="bg-gray-800">
-                        <div className="mx-auto mt-14 bg-gray-800 max-w-7xl px-4 sm:px-6 bg-gray-800 lg:px-8 bg-gray-800">
-                           <h1 className="text-2xl bg-gray-800 text-center font-bold tracking-tight text-white">
-                                Woodchuck Stump Grinding</h1>
-                        </div>
-                        <img className="rounded-lg h-full bg-gray-800 w-full mt-2 -mb-2" src={timatwork}
-                                                          alt="Tim with the bandit machine digging a hole."/>
-                        <div className="flex flex-col items-center">
-                            <p className="mt-4 text-center text-lg leading-6 text-white sm:mt-6 bg-gray-800">
-                                <span className="mt-2 mb-4 block text-center text-xl text-white font-medium">
-                                Call us today we can beat their price!
-                                    <p className="font-bold text-3xl text-green-300">Call Now</p>
-                                </span>
-                            </p>
-                            <button onClick={clickHandler}
-                                    className="btn btn-wide btn btn-outline btn-success text-center font-large just-items-center">
-                                <a href="tel:7816501119"><b>781-650-1119</b></a>
-                            </button>
-                        </div>
+
+                <div className="mt-12 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3"><img
+                    className="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:col-start-1 sm:mt-0 sm:text-sm"
+                    src={timatwork}
+                    alt="Tim with the bandit machine digging a hole."/>
+                    <div className="mt-4  leading-6  sm:mt-6 ">
+                        <p className="text-4xl text-white text-center font- sm:text-4xl">Woodchuck Stump Grinding</p>
                     </div>
+                </div>
+                <div className="mt-5 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3">
+                    <button
+                        src={phone}
+                        type="button"
+                        className="inline-flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:col-start-2 sm:text-sm"
+                        onClick={(clickHandler) => setOpen(false)}
+                    ><a href="tel:7816501119">Call Now</a>
+
+                    </button>
+                    <button
+                        src={text}
+                        type="button"
+                        className="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:col-start-1 sm:mt-0 sm:text-sm"
+                        onClick={(clickHandler) => setOpen(false)}
+                        ref={cancelButtonRef}
+                    ><a href="sms:(781)(6501119)"> Text Us
+                    </a>
+                    </button>
+                </div>
+                <div className="mt-5 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3">
+                    <Link to="/reviews"><button
+                        type="button"
+                        className="inline-flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:col-start-2 sm:mt-0 sm:text-sm"
+                        onClick={(clickHandler) => setOpen(false)}
+                    >Reviews
+                    </button></Link>
+                    <video autoPlay loop muted playsInline
+                           className="mt-4 inline-flex w-full mb-4 justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none  focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:col-start-1 sm:mt-0 sm:text-sm"
+                           style={{width: '100%'}}>
+                        <source src={"https://i.imgur.com/erAsOoq.mp4"} type="video/mp4"
+                        />
+                    </video>
                 </div>
             </main>
         </div>
-    </div>)
-}
+    </div>);
+};
+
+
 
 
 
