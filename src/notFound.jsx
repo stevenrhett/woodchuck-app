@@ -1,5 +1,5 @@
 import React from 'react';
-import BeeKind from '/Users/admin/woodchuck-app/src/assets/bee-kind-error-page.svg';
+import BeeKind from './assets/bee-kind-error-page.svg';
 
 
 export default function NotFound() {

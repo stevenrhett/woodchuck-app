@@ -54,7 +54,7 @@ export default function Dashboard() {
                     >Reviews
                     </button></Link>
                     <video autoPlay loop muted playsInline
-                           className="mt-4 inline-flex w-full mb-4 justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none  focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:col-start-1 sm:mt-0 sm:text-sm"
+                           className="mt-4 inline-flex bg-red-200 w-full mb-4 justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none  focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:col-start-1 sm:mt-0 sm:text-sm"
                            style={{width: '100%'}}>
                         <source src={"https://i.imgur.com/erAsOoq.mp4"} type="video/mp4"
                         />
