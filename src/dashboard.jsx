@@ -6,14 +6,11 @@ import {Link} from "react-router-dom";
 
 export default function Dashboard() {
 
-    const [open, setOpen] = useState(true)
+    const [, setOpen] = useState(true)
 
     const cancelButtonRef = useRef(null)
-    const clickHandler = () => {
-        console.log("clicked");
-    }
-    return (<div className="bg-gray-800">
-        <div className="container  mx-auto sm:px-6 bg-gray-800 lg:px-8 bg-gray-800">
+    return (<div className="container">
+        <div className="mx-auto sm:px-6 bg-gray-800 lg:px-8 bg-gray-800">
             <header className="py-10 bg-gray-800">
                 <div className="mx-auto bg-gray-800 max-w-7xl px-4 sm:px-6 bg-gray-800 lg:px-8 bg-gray-800">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">test
@@ -35,7 +32,7 @@ export default function Dashboard() {
                         src={phone}
                         type="button"
                         className="inline-flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:col-start-2 sm:text-sm"
-                        onClick={(clickHandler) => setOpen(false)}
+                        onClick={() => setOpen(false)}
                     ><a href="tel:7816501119">Call Now</a>
 
                     </button>
@@ -43,7 +40,7 @@ export default function Dashboard() {
                         src={text}
                         type="button"
                         className="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:col-start-1 sm:mt-0 sm:text-sm"
-                        onClick={(clickHandler) => setOpen(false)}
+                        onClick={() => setOpen(false)}
                         ref={cancelButtonRef}
                     ><a href="sms:(781)(6501119)"> Text Us
                     </a>
@@ -53,7 +50,7 @@ export default function Dashboard() {
                     <Link to="/reviews"><button
                         type="button"
                         className="inline-flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:col-start-2 sm:mt-0 sm:text-sm"
-                        onClick={(clickHandler) => setOpen(false)}
+                        onClick={() => setOpen(false)}
                     >Reviews
                     </button></Link>
                     <video autoPlay loop muted playsInline
