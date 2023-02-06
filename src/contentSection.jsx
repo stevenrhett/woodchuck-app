@@ -65,7 +65,7 @@ function contentSection() {
 
 
         </div>
-        {/*<Footer/>*/}
+
     </div>)
 }
 
