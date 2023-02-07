@@ -3,9 +3,10 @@ import {Dialog} from '@headlessui/react';
 import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline';
 import vector from '/src/assets/Vector.svg';
 import TimAtWork from '/src/assets/timatwork.png';
+import {NavLink} from "react-router-dom";
 
 const navigation = [{name: 'Home', href: '/home'}, {name: 'Stumps', href: '/stumps'}, {
-    name: 'Staff', href: 'staff'
+    name: 'Staff', href: '/staff'
 }, {name: 'Settings', href: 'settings'},]
 
 export default function Hero() {
@@ -63,9 +64,9 @@ export default function Hero() {
                 </div>
                 <div className="hidden lg:flex lg:gap-x-12">
                     {navigation.map((item) => (
-                        <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-white">
+                        <NavLink to={item.href} className="text-sm font-semibold leading-6 text-white">
                             {item.name}
-                        </a>))}
+                        </NavLink>))}
                 </div>
             </nav>
             <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -88,13 +89,13 @@ export default function Hero() {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-100/25">
                             <div className="space-y-2 py-6">
-                                {navigation.map((item) => (<a
+                                {navigation.map((item) => (<NavLink
+                                    to={item.href}
                                     key={item.name}
-                                    href={item.href}
                                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10"
                                 >
                                     {item.name}
-                                </a>))}
+                                </NavLink>))}
                             </div>
                         </div>
                     </div>

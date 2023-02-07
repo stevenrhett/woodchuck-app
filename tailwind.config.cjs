@@ -1,12 +1,7 @@
-const colors = require('tailwindcss/colors')
-
 module.exports = {
-    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}",], theme: {
-        extend: {
-            colors: {
-                gray: colors.gray, sky: colors.sky, cyan: colors.cyan,
-            },
-        },
+    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}",],
+    theme: {
+        extend: {},
     },
 
     plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'), require("daisyui"),
@@ -16,5 +11,5 @@ module.exports = {
 }
 
 
-// Path: index.html
+
 

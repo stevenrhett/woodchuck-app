@@ -9,9 +9,8 @@ function Root() {
         <div>
 
             <Hero/>
-
-            <Outlet/>
             <Footer/>
+            <Outlet/>
         </div>
     )
 };

@@ -1,33 +1,36 @@
 import './index.css'
-import Dashboard from "./dashboard.jsx";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import ContentSection from "./contentSection.jsx";
-import Services from "./services.jsx";
-import TeamPage from "./teamPage.jsx";
 import Root from "./Root.jsx";
 import Hero from "./components/Hero.jsx";
-
+import Stumps from "./components/Stumps.jsx";
+import Staff from "./components/Staff.jsx";
+import Settings from "./components/Settings.jsx";
 
 
 const router = createBrowserRouter([{
-    path: "/",
-    element: <Root/>,
-    errorElement: <Error/>,
-    children: [
-
+        path: "/",
+        element: <Root/>,
+        errorElement: <Error/>
+    },
         {
-            // path: "/", element: <Hero/>
-        }, {
-            path: 'maps', element: <ContentSection/>
-        }, {
-            path: 'services', element: <Services/>
-        }, {
-            path: 'team', element: <TeamPage/>
+            path: "/home", element: <Hero/>,
+            errorElement: <Error/>
+        },
+        {
+            path: "/stumps", element: <Stumps/>,
+            errorElement: <Error/>
+        },
+        {
+            path: "/staff", element: <Staff/>,
+            errorElement: <Error/>
+        },
+        {
+            path: "/settings", element: <Settings/>,
+            errorElement: <Error/>
         },
 
     ],
-},
-]);
+);
 
 
 const App = () => {
