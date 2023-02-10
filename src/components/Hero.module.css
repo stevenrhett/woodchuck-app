@@ -1,0 +1,11 @@
+.header {
+text-decoration:none;
+    color: white !important;
+}
+.list a:hover,
+.list a:active
+ {
+color:whitesmoke;
+    font-size: larger;
+    text-decoration:none;
+}

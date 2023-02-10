@@ -1,11 +1,10 @@
 import './index.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Root from "./Root.jsx";
-import Hero from "./components/Hero.jsx";
 import Stumps from "./components/Stumps.jsx";
 import Staff from "./components/Staff.jsx";
 import Settings from "./components/Settings.jsx";
-
+import Contact from "./components/Contact.jsx";
 
 const router = createBrowserRouter([{
         path: "/",
@@ -13,20 +12,21 @@ const router = createBrowserRouter([{
         errorElement: <Error/>
     },
         {
-            path: "/home", element: <Hero/>,
-            errorElement: <Error/>
+            path: "/home", element: <Root/>,
+
+
         },
         {
             path: "/stumps", element: <Stumps/>,
-            errorElement: <Error/>
         },
         {
             path: "/staff", element: <Staff/>,
-            errorElement: <Error/>
         },
         {
             path: "/settings", element: <Settings/>,
-            errorElement: <Error/>
+        },
+        {
+            path: "/contact", element: <Contact/>,
         },
 
     ],
