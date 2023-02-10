@@ -1,4 +1,3 @@
-import React from 'react';
 import stumps from '/src/assets/noto_wood.svg';
 
 const navigation = {
@@ -38,30 +37,29 @@ const Footer = () => {
     const copyrightText = `${year} Woodchuck Stump Grinding Weymouth, MA 02191`;
     const phoneNumber = '7816501119';
     const email = 'grindingwoodchuck@gmail.com';
-    return (
-        <>
-            <footer className="footer footer-center p-10 bg-primary text-white">
-    <div>
-        <img src={stumps} alt="cartoon stump"/>
-        <p className="mt-8 text-center text-base text-gray-400">
-            <a href={`tel:${phoneNumber}`}
-               className="text-blue-500">({phoneNumber.slice(0, 3)}) {phoneNumber.slice(3, 6)}-{phoneNumber.slice(6)}</a><br/>
-            <a href={`mailto:${email}`} className="text-blue-500">{`${email}`}</a><br/>
-            {copyrightText}
-        </p>
-    </div>
-    <div>
-        <div className="grid grid-flow-col">
-            <div className="flex justify-center">
-                {navigation.social.map((link, key) => (<a key={key} href={link.href} className="mx-4">
-                    {link.icon({width: '24px', height: '24px', title: link.name, alt: link.name})}
-                </a>))}
+    return (<>
+        <footer className="footer footer-center p-10 bg-primary fixed bottom-0 w-full text-white">
+
+            <div>
+                <img src={stumps} alt="cartoon stump"/>
+                <p className="mt-8 text-center text-base text-gray-400">
+                    <a href={`tel:${phoneNumber}`}
+                       className="text-blue-500">({phoneNumber.slice(0, 3)}) {phoneNumber.slice(3, 6)}-{phoneNumber.slice(6)}</a><br/>
+                    <a href={`mailto:${email}`} className="text-blue-500">{`${email}`}</a><br/>
+                    {copyrightText}
+                </p>
             </div>
-        </div>
-    </div>
-</footer>
-        </>
-         )
+            <div>
+                <div className="grid grid-flow-col">
+                    <div className="flex justify-center">
+                        {navigation.social.map((link, key) => (<a key={key} href={link.href} className="mx-4">
+                            {link.icon({width: '24px', height: '24px', title: link.name, alt: link.name})}
+                        </a>))}
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </>)
 }
 
 export default Footer;

@@ -7,7 +7,6 @@ import Hero from "./components/Hero.jsx";
 function Root() {
     return (
         <div>
-
             <Hero/>
             <Footer/>
             <Outlet/>
