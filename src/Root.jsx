@@ -1,17 +1,18 @@
 import {Outlet} from "react-router-dom"
 import Footer from "./components/Footer";
-import Hero from "./components/Hero.jsx";
+import HeroNavigation from "./components/HeroNavigation.jsx";
 
 
-
-function Root() {
+function RootLayout() {
     return (
-        <div>
-            <Hero/>
-            <Footer/>
+        <>
+            <HeroNavigation/>
             <Outlet/>
-        </div>
-    )
-};
+            <Footer/>
 
-export default Root;
+
+        </>
+    )
+}
+
+export default RootLayout;

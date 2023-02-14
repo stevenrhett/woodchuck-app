@@ -6,7 +6,7 @@ module.exports = {
             'lg': {'min': '1024px', 'max': '1280px'},
             'xl': {'min': '1281px', 'max': '1600px'},
         },
-    }, plugins: [require("daisyui"), require('@tailwindcss/aspect-ratio'), require('@tailwindcss/forms')],
+    }, plugins: [require('@tailwindcss/aspect-ratio'), require('@tailwindcss/forms'), require("daisyui")],
 };
 
 

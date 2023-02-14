@@ -1,36 +1,29 @@
 import './index.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import Root from "./Root.jsx";
+import RootLayout from "./Root.jsx";
 import Stumps from "./components/Stumps.jsx";
-import Staff from "./components/Staff.jsx";
-import Settings from "./components/Settings.jsx";
 import Contact from "./components/Contact.jsx";
+import ErrorPage from "./section/ErrorPage.jsx";
+import Staff from "./components/Staff.jsx";
+import Services from "./section/Services.jsx";
 
-const router = createBrowserRouter([{
+
+const router = createBrowserRouter([
+
+    {
         path: "/",
-        element: <Root/>,
-        errorElement: <Error/>
+        element: <RootLayout/>,
+        errorElement: <ErrorPage/>,
     },
-        {
-            path: "/home", element: <Root/>,
+            {path: "/home", element: <RootLayout/>,},
+            {path: "/stumps", element: <Stumps/>,},
+            {path: "/staff", element: <Staff/>,},
+            {path: "/contact", element: <Contact/>,},
+            {path: "/services", element: <Services/>,},
 
 
-        },
-        {
-            path: "/stumps", element: <Stumps/>,
-        },
-        {
-            path: "/staff", element: <Staff/>,
-        },
-        {
-            path: "/settings", element: <Settings/>,
-        },
-        {
-            path: "/contact", element: <Contact/>,
-        },
-
-    ],
-);
+    ]
+)
 
 
 const App = () => {
