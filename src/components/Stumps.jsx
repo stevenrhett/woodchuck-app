@@ -1,93 +1,73 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 
+const files = [
+    {
+        title: 'Work',
+        id: 1,
+        source:
+            ' https://img1.wsimg.com/isteam/ip/bb7c43a1-5fb1-48cd-8f08-37327b4f7a53/Resized_Resized_20220526_161746(1).jpeg/:/cr'
+    },
+    {
+        title: 'Boston',
+        id: 2,
+        source:
+            ' https://img1.wsimg.com/isteam/ip/bb7c43a1-5fb1-48cd-8f08-37327b4f7a53/Resized_Resized_20220514_123622.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:540,cg:true'
+    },
+    {
+        title: 'Quincy',
+        id: 3,
+        source:
+            'https://img1.wsimg.com/isteam/ip/bb7c43a1-5fb1-48cd-8f08-37327b4f7a53/Resized_Resized_20220514_153612.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:540,cg:true '
+    },
+    {
+        title: 'Weymouth',
+        id: 4,
+        source:
+            'https://img1.wsimg.com/isteam/ip/bb7c43a1-5fb1-48cd-8f08-37327b4f7a53/Resized_Resized_20220526_115350.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:540,cg:true '
+    },
 
-            const files = [
-            {
-                title: 'IMG_4985.HEIC',
-                size: '3.9 MB',
-                source:
-                'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-            },
-                    {
-                            title: 'IMG_4985.HEIC',
-                            size: '3.9 MB',
-                            source:
-                                'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-                    },
-                    {
-                            title: 'IMG_4985.HEIC',
-                            size: '3.9 MB',
-                            source:
-                                'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-                    },
-                    {
-                            title: 'IMG_4985.HEIC',
-                            size: '3.9 MB',
-                            source:
-                                'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-                    },
-                    {
-                            title: 'IMG_4985.HEIC',
-                            size: '3.9 MB',
-                            source:
-                                'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-                    },
-                    {
-                            title: 'IMG_4985.HEIC',
-                            size: '3.9 MB',
-                            source:
-                                'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-                    },
-                    {
-                            title: 'IMG_4985.HEIC',
-                            size: '3.9 MB',
-                            source:
-                                'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-                    },
-                    {
-                            title: 'IMG_4985.HEIC',
-                            size: '3.9 MB',
-                            source:
-                                'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-                    },
-                    {
-                            title: 'IMG_4985.HEIC',
-                            size: '3.9 MB',
-                            source:
-                                'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-                    },
-                    {
-                            title: 'IMG_4985.HEIC',
-                            size: '3.9 MB',
-                            source:
-                                'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-                    },
-            // More files...
-            ]
+    {
+        title: 'Plymouth',
+        id: 5,
+        source:
+            ' https://img1.wsimg.com/isteam/ip/bb7c43a1-5fb1-48cd-8f08-37327b4f7a53/Resized_Resized_20220526_161746(1).jpeg/:/cr '
+    },
+    {
+        title: 'Brockton',
+        id: 6,
+        source:
+            ' https://img1.wsimg.com/isteam/ip/bb7c43a1-5fb1-48cd-8f08-37327b4f7a53/Resized_Resized_20220514_123622.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:540,cg:true'
+    },
+    {
+        title: 'Whitman',
+        id: 7,
+        source:
+            'https://img1.wsimg.com/isteam/ip/bb7c43a1-5fb1-48cd-8f08-37327b4f7a53/Resized_Resized_20220514_153612.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:540,cg:true '
+    },
+    {
+        title: 'Weymouth',
+        id: 8,
+        source:
+            'https://img1.wsimg.com/isteam/ip/bb7c43a1-5fb1-48cd-8f08-37327b4f7a53/Resized_Resized_20220526_115350.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:540,cg:true '
+    },
+]
 
-            export default function Stumps() {
-            return (
-                <>
-                        <NavLink to={"/.."} className="btn btn-outline btn-warning">Back</NavLink>
-
-                        <ul role="list" className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
-        {files.map((file) => (
-            <li key={file.source} className="relative">
-            <div className="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-            <img src={file.source} alt="" className="pointer-events-none object-cover group-hover:opacity-75" />
-            <button type="button" className="absolute inset-0 focus:outline-none">
-            <span className="sr-only">View details for {file.title}</span>
-            </button>
+export default function Stumps() {
+    return (<>
+            <Link to={"/.."} className="btn btn-outline btn-warning">Back</Link>
+            <div className="mt-6 rounded-md p-4 grid grid-cols-2 sm:grid-cols-1 sm:gap-x-4 lg:grid-cols-4 ">
+                {files.map(file => (
+                    <div key={file.id}>
+                        {/*<h1 className="text-primary font-bold pointer-events-none text-center mt-2 block truncate">{file.title}</h1>*/}
+                        <img src={file.source} alt={file.title}
+                             className="p-1 mx-auto justify-around rounded-md"/>
+                    </div>
+                ))}
             </div>
-            <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">{file.title}</p>
-            <p className="pointer-events-none block text-sm font-medium text-gray-500">{file.size}</p>
-            </li>
-            ))}
-            </ul>
-                </>
-            )
-        }
+        </>
 
+    )
+}
 
