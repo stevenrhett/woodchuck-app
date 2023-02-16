@@ -1,10 +1,8 @@
 module.exports = {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}",], theme: {
         screens: {
-            'sm': {'min': '370px', 'max': '767px'},
-            'md': {'min': '768px', 'max': '1023px'},
-            'lg': {'min': '1024px', 'max': '1280px'},
-            'xl': {'min': '1281px', 'max': '1600px'},
+            'sm': {'min': '370px', 'max': '745px'},
+            'lg': {'min': '746px', 'max': '2400px'},
         },
     }, plugins: [require('@tailwindcss/aspect-ratio'), require('@tailwindcss/forms'), require("daisyui")],
 };
