@@ -4,10 +4,13 @@ import HeroNavigation from "./components/HeroNavigation.jsx";
 
 
 function RootLayout() {
+
     return (
         <>
             <HeroNavigation/>
+
             <Outlet/>
+
             <Footer/>
 
 
