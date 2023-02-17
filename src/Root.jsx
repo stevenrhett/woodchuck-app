@@ -8,9 +8,7 @@ function RootLayout() {
     return (
         <>
             <HeroNavigation/>
-
             <Outlet/>
-
             <Footer/>
 
 

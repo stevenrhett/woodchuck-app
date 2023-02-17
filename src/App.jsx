@@ -6,22 +6,41 @@ import Contact from "./components/Contact.jsx";
 import ErrorPage from "./section/ErrorPage.jsx";
 import Staff from "./components/Staff.jsx";
 import Services from "./section/Services.jsx";
+import Hero from "./components/Hero.jsx";
 
 
 const router = createBrowserRouter([
 
-    {
-        path: "/",
-        element: <RootLayout/>,
-        errorElement: <ErrorPage/>,
-    },
-            {path: "/home", element: <RootLayout/>},
-            {path: "/stumps", element: <Stumps/>},
-            {path: "/staff", element: <Staff/>},
-            {path: "/contact", element: <Contact/>},
-            {path: "/services", element: <Services/>},
+        {
+            path: "/",
+            element: <RootLayout/>,
+            errorElement: <ErrorPage/>,
+            children: [
+                {
+                    path: "home",
+                    element: <Hero/>
+                },
 
+                {
+                    path: "services",
+                    element: <Services/>
+                },
 
+                {
+                    path: "stumps",
+                    element: <Stumps/>
+                },
+
+                {
+                    path: "contact",
+                    element: <Contact/>
+                },
+
+                {
+                    path: "staff",
+                    element: <Staff/>
+                }]
+        }
     ]
 )
 
