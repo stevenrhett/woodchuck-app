@@ -43,18 +43,7 @@ const router = createBrowserRouter([
                 },
 
             ],
-            indexRoute: {
-                element: <Hero/>
-            },
-            notFoundRoute: {
-                element: <ErrorPage/>
-            },
-            onEnter: (nextState, replace) => {
-                replace("/home");
-            },
-            onLeave: (nextState, replace) => {
-                replace("/home");
-            },
+
         }
 
     ]

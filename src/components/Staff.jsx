@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 
 const people = [
     {
@@ -27,8 +26,8 @@ const people = [
 export default function Staff() {
     return (
         <div className="bg-gray-900">
-            <div className="mx-auto max-w-7xl py-12 px-6 lg:px-8 lg:py-24">
-                <div className="space-y-12">
+            <div className="mx-auto max-w-2xl py-6 px-6 lg:px-8 lg:py-12">
+                <div className="space-y-4">
                     <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
                         <h2 className="text-3xl text-center font-bold tracking-tight text-white sm:text-4xl">Meet our
                             team</h2>
