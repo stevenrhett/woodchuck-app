@@ -1,4 +1,4 @@
-import stumps from '/public/assets/noto_wood.svg';
+import stumps from '../assets/noto_wood.svg';
 import React from "react";
 
 const towns = [

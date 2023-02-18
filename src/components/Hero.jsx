@@ -1,5 +1,5 @@
 import React from 'react';
-import TimAtWork from "/public/assets/timatwork.png"
+import TimAtWork from "../assets/timatwork.png"
 
 
 export default function Hero() {
