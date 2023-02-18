@@ -7,10 +7,10 @@ export default function Hero() {
 
     return (
         <>
-            <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+            <div className="max-w-md mx-auto bg-white rounded-xl shadow-md md:max-w-2xl">
                 <div className="md:flex">
                     <div className="md:shrink-0">
-                        <img className="h-48 w-full object-cover md:h-full md:w-48"
+                        <img className="mt-0 h-48 w-full object-cover md:h-full md:w-48"
                              src={TimAtWork} alt="Tim At Work"/>
                     </div>
                     <div className="p-8">

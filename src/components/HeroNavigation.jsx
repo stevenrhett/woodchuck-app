@@ -75,7 +75,7 @@ export default function HeroNavigation() {
             </div>
 
             {/*this is the menu that appears after clicking the three bars on the small screen*/}
-            <Disclosure.Panel className="text-white  lg:hidden">
+            <Disclosure.Panel className="lg:hidden">
                 <div className="text-gray-100 bg-base-50 h-screen opacity-50 space-y-1 px-2 pt-2 pb-3">
                     {navigation.map((item) => (<Disclosure.Button
                         key={item.name}
