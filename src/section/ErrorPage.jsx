@@ -7,11 +7,11 @@ const ErrorPage = () => {
             <p>Something went wrong</p>
             <p>Please try again</p>
             <p>If the problem persists, please contact us</p>
-            <p>
-                <a href="https://www.linkedin.com/in/steven-johnson-massachusetts/">
-                    LinkedIn
-                </a>
-            </p>
+
+
+
+
+
         </div>
     );
 };

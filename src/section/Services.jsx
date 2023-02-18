@@ -9,12 +9,12 @@ const features = [
 export default function Services() {
 
     return (
-        <div className="bg-white">
+        <div className="bg-slate-800 dark:bg-gray-900">
             <div
                 className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
                 <div>
-                    <h2 className="text-3xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl">Grinding <br/>vs. <br/>Removal</h2>
-                    <p className="mt-4 text-gray-500">
+                    <h2 className="text-3xl font-bold tracking-tight text-center text-white dark:text-gray-900 sm:text-4xl">Grinding <br/>vs. <br/>Removal</h2>
+                    <p className="mt-4 text-white dark:text-gray-900">
                         Stump grinding will leave the stump in the ground, where it will eventually decompose. On the other hand, stump removal will involve removing the stump from your property, which is more invasive and may involve the use of chemicals that can cause small disturbances to the surrounding soil.
                     </p>
 

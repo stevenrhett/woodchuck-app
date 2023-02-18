@@ -27,7 +27,6 @@ const people = [
 export default function Staff() {
     return (
         <div className="bg-gray-900">
-            <Link to={"/.."} className="btn btn-outline btn-warning">Back</Link>
             <div className="mx-auto max-w-7xl py-12 px-6 lg:px-8 lg:py-24">
                 <div className="space-y-12">
                     <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
