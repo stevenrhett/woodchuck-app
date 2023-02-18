@@ -1,4 +1,4 @@
-import stumps from '../assets/noto_wood.svg';
+import stumps from './assets/noto_wood.svg';
 import React from "react";
 
 const towns = [{town: 'Abington', id: 1}, {town: 'Braintree', id: 2}, {town: 'Canton', id: 3}, {

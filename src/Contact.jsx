@@ -14,7 +14,7 @@ export default function Contact() {
                             <p className="mt-4 mx-auto text-lg text-gray-100">
                                 Send us a message using this form.
                             </p>
-                            <form action="#" method="POST"
+                            <form action="src/components#" method="POST"
                                   className="mt-4 text-gray-100 grid grid-cols-1 gap-y-6 grid-cols-2 gap-x-8">
                                 <div>
                                     <label htmlFor="first-name" className="block text-sm font-medium text-gray-100">

@@ -1,11 +1,11 @@
 import './index.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import RootLayout from "./Root.jsx";
-import Stumps from "./components/Stumps.jsx";
-import Contact from "./components/Contact.jsx";
-import ErrorPage from "./section/ErrorPage.jsx";
-import Staff from "./components/Staff.jsx";
-import Services from "./section/Services.jsx";
+import Stumps from "./Stumps.jsx";
+import Contact from "./Contact.jsx";
+import ErrorPage from "./ErrorPage.jsx";
+import Staff from "./Staff.jsx";
+import Services from "./Services.jsx";
 
 
 const router = createBrowserRouter([
