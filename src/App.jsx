@@ -13,11 +13,12 @@ const router = createBrowserRouter([
 
         {
             path: "/",
-            element: <RootLayout/>,
-            errorElement: <ErrorPage/>,
+            element: <RootLayout/>, errorElement: <ErrorPage/>,
             children: [
+
+
                 {
-                    path: "home",
+                    path: "/home",
                     element: <Hero/>
                 },
 
@@ -39,8 +40,23 @@ const router = createBrowserRouter([
                 {
                     path: "staff",
                     element: <Staff/>
-                }]
+                },
+
+            ],
+            indexRoute: {
+                element: <Hero/>
+            },
+            notFoundRoute: {
+                element: <ErrorPage/>
+            },
+            onEnter: (nextState, replace) => {
+                replace("/home");
+            },
+            onLeave: (nextState, replace) => {
+                replace("/home");
+            },
         }
+
     ]
 )
 
