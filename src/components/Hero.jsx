@@ -1,5 +1,5 @@
 import React from 'react';
-import TimAtWork from "../assets/timatwork.png";
+import TimAtWork from "/public/assets/timatwork.png"
 
 
 export default function Hero() {
@@ -10,8 +10,8 @@ export default function Hero() {
             <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
                 <div className="md:flex">
                     <div className="md:shrink-0">
-                        <img className="h-48 w-full object-cover md:h-full md:w-48" src={TimAtWork}
-                             alt="photo of a heavy equipment operator using a stump grinding machine."/>
+                        <img className="h-48 w-full object-cover md:h-full md:w-48"
+                             src={TimAtWork} alt="Tim At Work"/>
                     </div>
                     <div className="p-8">
                         <div

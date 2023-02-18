@@ -1,7 +1,7 @@
 import React from 'react'
 import {Disclosure} from '@headlessui/react'
 import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline'
-import vector from "../assets/Vector.svg";
+import vector from "/public/assets/Vector.svg";
 import {NavLink, useLocation} from "react-router-dom";
 
 const navigation = [{name: 'Home', href: '/home', current: false}, {
@@ -22,6 +22,10 @@ export default function HeroNavigation() {
         ...item, current: item.href === pathname
     }));
 
+
+
+
+
     return (<Disclosure as="nav" className="bg-slate-800">
         {({open}) => (<>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,9 +33,12 @@ export default function HeroNavigation() {
                     <div className="flex flex-1 justify-start ">
                         <div className="lg:left-0 lg:top-0">
                             <img
-                                className="animate-bounce h-12 w-auto"
+                                className="h-12 w-auto animate-bounce duration-75"
                                 src={vector}
                                 alt="Photo a half of a saw blade."/>
+                            <div className="animate-ping duration-75">
+                                <span>🪵🪵🪵</span></div>
+
                         </div>
                         <div className="flex-1 flex items-center justify-center">
 

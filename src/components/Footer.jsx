@@ -1,4 +1,4 @@
-import stumps from '/src/assets/noto_wood.svg';
+import stumps from '/public/assets/noto_wood.svg';
 import {TownList} from "../section/Towns.jsx";
 import React from "react";
 
