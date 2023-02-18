@@ -3,6 +3,7 @@ import {Disclosure} from '@headlessui/react'
 import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline'
 import vector from "../assets/Vector.svg";
 import {NavLink, useLocation} from "react-router-dom";
+import Hero from "./Hero.jsx";
 
 const navigation = [{name: 'Home', href: '/home', current: false}, {
     name: 'Stumps', href: '/stumps', current: false
@@ -23,14 +24,11 @@ export default function HeroNavigation() {
     }));
 
 
-
-
-
-    return (<Disclosure as="nav" className="bg-slate-800">
+    return (<Disclosure as="nav" className="mx-auto bg-slate-900">
         {({open}) => (<>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-2xl mx-auto  rounded-md shadow-md">
                 <div className="relative flex items-center justify-between h-16">
-                    <div className="flex flex-1 justify-start ">
+                    <div className="flex flex-1 justify-start">
                         <div className="lg:left-0 lg:top-0">
                             <img
                                 className="h-12 w-auto animate-bounce duration-75"
@@ -41,10 +39,9 @@ export default function HeroNavigation() {
 
                         </div>
                         <div className="flex-1 flex items-center justify-center">
-
                         </div>
                         <div className="text-white  hidden lg:mr-6 justify-center lg:block">
-                            <div className="text-white  flex mr-6 justify-center space-x-4">
+                            <div className="text-white pt-4 text-center flex mr-6 justify-center space-x-4">
                                 {updatedNavigation.map((item) => (<NavLink
                                     key={item.name}
                                     to={item.href}
@@ -62,7 +59,8 @@ export default function HeroNavigation() {
 
                     {/*this is the menu of three bars on the small screen top right*/}
 
-                    <div className="relative text-white  flex items-center justify-end h-16 lg:hidden right-4 items-center pl-2">
+                    <div
+                        className="relative text-white  flex items-center justify-end h-16 lg:hidden right-4 items-center pl-2">
                         <Disclosure.Button
                             className="inline-flex items-center justify-center rounded-md p-2 text-gray-100 hover:bg-gray-600 text-white outline-white ring-1 ring-inset ring-white">
                             <span className="sr-only">Open main menu</span>
@@ -76,18 +74,19 @@ export default function HeroNavigation() {
 
             {/*this is the menu that appears after clicking the three bars on the small screen*/}
             <Disclosure.Panel className="lg:hidden">
-                <div className="text-gray-100 bg-base-50 h-screen opacity-50 space-y-1 px-2 pt-2 pb-3">
+                <div className="text-white brightness-100 max-h-screen space-y-1 px-2 pt-2 pb-3">
                     {navigation.map((item) => (<Disclosure.Button
                         key={item.name}
                         as="a"
                         href={item.href}
-                        className={classNames(item.current ? 'bg-gray-900 text-white' : 'text-white hover:bg-gray-700 hover:text-white', 'text-white block px-3 py-2 rounded-md text-base font-medium')}
+                        className={classNames(item.current ? 'bg-slate-900 text-white opacity-75' : 'hover:bg-gray-700 opacity-90', 'block px-3 py-2 rounded-md  font-medium')}
                         aria-current={item.current ? 'page' : undefined}
                     >
                         {item.name}
                     </Disclosure.Button>))}
                 </div>
             </Disclosure.Panel>
+            <Hero/>
         </>)}
     </Disclosure>)
 }

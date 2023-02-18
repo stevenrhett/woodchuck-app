@@ -1,6 +1,6 @@
 export default function Reviews() {
     return (
-        <div className="bg-slate-800 dark:bg-gray-900 py-16 lg:py-24">
+        <div className="bg-slate-900 dark:bg-gray-900 py-16 lg:py-24">
             <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="relative rounded-xl bg-indigo-500 py-24 px-8 shadow-2xl lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-16">
                     <div className="absolute inset-0 opacity-50 mix-blend-multiply saturate-0 filter">

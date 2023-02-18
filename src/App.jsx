@@ -6,7 +6,6 @@ import Contact from "./components/Contact.jsx";
 import ErrorPage from "./section/ErrorPage.jsx";
 import Staff from "./components/Staff.jsx";
 import Services from "./section/Services.jsx";
-import Hero from "./components/Hero.jsx";
 
 
 const router = createBrowserRouter([
@@ -19,7 +18,7 @@ const router = createBrowserRouter([
 
                 {
                     path: "/home",
-                    element: <Hero/>
+
                 },
 
                 {

@@ -7,7 +7,13 @@ const mapStyles = {
 };
 
 export class MapContainer extends Component {
-    render() {
+// (async () => {
+//     const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=London,uk&units=imperial&APPID=949d1u22cbffbrarjh182eig55721odj');
+//     const data = await response.json();
+//     console.log(data);
+// })();
+
+render() {
         return (
             <Map
                 google={this.props.google}

@@ -4,7 +4,8 @@ import React from 'react';
 export default function Services() {
 
     return (
-        <div className="bg-slate-800 ">
+        <div className="max-w-2xl mx-auto rounded-xl shadow-md md:max-w-2xl">
+            <div className="bg-slate-900 ">
             <div
                 className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-12 px-4 sm:px-6 s lg:max-w-2xl lg:grid-cols-2 lg:px-8">
                 <div>
@@ -19,12 +20,13 @@ export default function Services() {
                 <div className="gap-8">
                     <img
                         src="https://i.imgur.com/4k3JmG9.png"
-                        className="rounded-lg bg-gray-100"
+                        className="rounded-md bg-gray-100"
                         alt="alt"
                     />
 
                 </div>
             </div>
+        </div>
         </div>
     )
 }
