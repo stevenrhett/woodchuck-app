@@ -82,7 +82,7 @@ export default function HeroNavigation() {
                         className={classNames(item.current ? 'bg-slate-900 text-white opacity-75' : 'hover:bg-gray-700 opacity-90', 'block px-3 py-2 rounded-md  font-medium')}
                         aria-current={item.current ? 'page' : undefined}
                     >
-                        {item.name}
+                      <NavLink to={item.href}>{item.name}</NavLink>
                     </Disclosure.Button>))}
                 </div>
             </Disclosure.Panel>
