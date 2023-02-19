@@ -1,14 +1,16 @@
-import './index.css'
+import '/src/index.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import RootLayout from "./Root.jsx";
-import Stumps from "./Stumps.jsx";
-import Contact from "./Contact.jsx";
-import ErrorPage from "./ErrorPage.jsx";
-import Staff from "./Staff.jsx";
-import Services from "./Services.jsx";
+import RootLayout from "/src/Root";
+import Stumps from "/src/Stumps";
+import Contact from "/src/Contact";
+import ErrorPage from "/src/ErrorPage";
+import Staff from "/src/Staff";
+import Services from "/src/Services";
+import Hero from "/src/Hero";
 
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+    [
 
         {
             path: "/",
@@ -18,6 +20,8 @@ const router = createBrowserRouter([
 
                 {
                     path: "/home",
+                    component: <Hero/>,
+
 
                 },
 
