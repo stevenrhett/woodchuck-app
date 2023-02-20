@@ -1,7 +1,7 @@
 import React from 'react'
 import {Disclosure} from '@headlessui/react'
 import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline'
-import vector from "../assets/Vector.svg";
+import vector from "./assets/Vector.svg";
 import {NavLink, useLocation} from "react-router-dom";
 
 const navigation = [{name: 'Home', href: '/home', current: false}, {

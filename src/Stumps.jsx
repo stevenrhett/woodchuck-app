@@ -8,7 +8,7 @@ export default function Stumps() {
                 alt=""
                 className="rounded-box"/>
             <div className="absolute flex justify-between transform -translate-y-1/2 left-20 top-10">
-                <a href="#" className="absolute animate-bounce bg-primary btn btn-circle">
+                <a href="src/components#" className="absolute animate-bounce bg-primary btn btn-circle">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                          stroke="currentColor" className="h-10">
                         <path strokeLinecap="round" strokeLinejoin="round"
@@ -53,7 +53,7 @@ export default function Stumps() {
                 alt=""
                 className="rounded-box"/>
             <div className="absolute flex justify-between transform -translate-y-1/2 left-48 top-10">
-                <a href="#" className="animate-pulse absolute bg-primary btn btn-circle">
+                <a href="src/components#" className="animate-pulse absolute bg-primary btn btn-circle">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                          strokeWidth={1.5} stroke="currentColor" className="h-10">
                         <path strokeLinecap="round" strokeLinejoin="round"
