@@ -1,61 +1,32 @@
 import '/src/index.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import RootLayout from "/src/Root";
-import Stumps from "/src/Stumps";
-import Contact from "/src/Contact";
-import ErrorPage from "/src/ErrorPage";
-import Staff from "/src/Staff";
-import Services from "/src/Services";
-import Hero from "/src/Hero";
+import Stumps from "/src/components/Stumps";
+import Contact from "/src/components/Contact";
+import Staff from "/src/components/Staff";
+import Services from "./components/Services.jsx";
+import Hero from "./components/Hero.jsx";
 
 
-const router = createBrowserRouter(
-    [
+const router = createBrowserRouter([
 
         {
-            path: "/",
-            element: <RootLayout/>, errorElement: <ErrorPage/>,
+            path: '/',
+            element: <RootLayout/>,
             children: [
-
-
-                {
-                    path: "/home",
-                    component: <Hero/>,
-
-
-                },
-
-                {
-                    path: "/services",
-                    element: <Services/>
-                },
-
-                {
-                    path: "/stumps",
-                    element: <Stumps/>
-                },
-
-                {
-                    path: "/contact",
-                    element: <Contact/>
-                },
-
-                {
-                    path: "/staff",
-                    element: <Staff/>
-                },
-
-            ],
-
+                {index: true, path: "home", element: <Hero/>},
+                {path: "stumps", element: <Stumps/>},
+                {path: "staff", element: <Staff/>},
+                {path: "contact", element: <Contact/>},
+                {path: "services", element: <Services/>}
+            ]
         }
-
     ]
 )
 
-
-const App = () => {
+export default function App() {
     return (<RouterProvider router={router}/>)
 }
 
 
-export default App;
+

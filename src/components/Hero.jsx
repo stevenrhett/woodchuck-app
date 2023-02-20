@@ -1,10 +1,8 @@
 import React from 'react';
-import TimAtWork from "./assets/timatwork.png"
+import TimAtWork from "../assets/timatwork.png"
 
 
 export default function Hero() {
-
-
     return (
         <>
             <div className="max-w-2xl bg-white mx-auto rounded-md">
@@ -29,6 +27,7 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
+
         </>
     )
 }

@@ -1,9 +1,8 @@
 import React from 'react'
 import {Disclosure} from '@headlessui/react'
 import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline'
-import vector from "./assets/Vector.svg";
+import vector from "../assets/Vector.svg";
 import {NavLink, useLocation} from "react-router-dom";
-import Hero from "./Hero.jsx";
 
 const navigation = [{name: 'Home', href: '/home', current: false}, {
     name: 'Stumps', href: '/stumps', current: false
@@ -17,11 +16,14 @@ function classNames(...classes) {
 
 
 export default function HeroNavigation() {
+
     const {pathname} = useLocation();
+
 
     const updatedNavigation = navigation.map((item) => ({
         ...item, current: item.href === pathname
     }));
+
 
 
     return (<Disclosure as="nav" className="mx-auto bg-slate-900">
@@ -82,11 +84,11 @@ export default function HeroNavigation() {
                         className={classNames(item.current ? 'bg-slate-900 text-white opacity-75' : 'hover:bg-gray-700 opacity-90', 'block px-3 py-2 rounded-md  font-medium')}
                         aria-current={item.current ? 'page' : undefined}
                     >
-                      <NavLink to={item.href}>{item.name}</NavLink>
+                        <NavLink to={item.href}>{item.name}</NavLink>
                     </Disclosure.Button>))}
                 </div>
             </Disclosure.Panel>
-            <Hero/>
+
         </>)}
     </Disclosure>)
 }
