@@ -11,10 +11,10 @@ import Hero from "./Hero.jsx";
 const router = createBrowserRouter([
 
         {
-            path: '/home',
+            path: '/',
             element: <RootLayout/>,
             children: [
-                {index: true, element: <Hero/>},
+                {index: true, path: "home", element: <Hero/>},
                 {path: "stumps", element: <Stumps/>},
                 {path: "staff", element: <Staff/>},
                 {path: "contact", element: <Contact/>},

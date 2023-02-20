@@ -1,14 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Disclosure} from '@headlessui/react'
 import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline'
 import vector from "./assets/Vector.svg";
 import {NavLink, useLocation} from "react-router-dom";
+import Hero from "./Hero.jsx";
 
-const navigation = [{name: 'Home', href: '/home', current: false}, {
-    name: 'Stumps', href: '/stumps', current: false
-}, {name: 'Staff', href: '/staff', current: false}, {
-    name: 'Contact', href: '/contact', current: false
-}, {name: 'Services', href: '/services', current: false},]
+const navigation = [{name: 'Home', href: 'home', current: false}, {
+    name: 'Stumps', href: 'stumps', current: false
+}, {name: 'Staff', href: 'staff', current: false}, {
+    name: 'Contact', href: 'contact', current: false
+}, {name: 'Services', href: 'services', current: false},]
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -16,6 +17,10 @@ function classNames(...classes) {
 
 
 export default function HeroNavigation() {
+    const [isDivVisible, setIsDivVisible] = useState(true);
+    const handleComponentClick = () => {
+        setIsDivVisible(false);
+    };
 
     const {pathname} = useLocation();
 
@@ -23,7 +28,6 @@ export default function HeroNavigation() {
     const updatedNavigation = navigation.map((item) => ({
         ...item, current: item.href === pathname
     }));
-
 
 
     return (<Disclosure as="nav" className="mx-auto bg-slate-900">
@@ -45,6 +49,7 @@ export default function HeroNavigation() {
                         <div className="text-white  hidden lg:mr-6 justify-center lg:block">
                             <div className="text-white pt-4 text-center flex mr-6 justify-center space-x-4">
                                 {updatedNavigation.map((item) => (<NavLink
+                                    onClick={handleComponentClick}
                                     key={item.name}
                                     to={item.href}
                                     className={classNames(item.current ? 'bg-gray-900 text-white' : 'hover:bg-gray-700 hover:text-white', 'px-3 py-2 rounded-md text-sm font-medium')}
@@ -84,10 +89,18 @@ export default function HeroNavigation() {
                         className={classNames(item.current ? 'bg-slate-900 text-white opacity-75' : 'hover:bg-gray-700 opacity-90', 'block px-3 py-2 rounded-md  font-medium')}
                         aria-current={item.current ? 'page' : undefined}
                     >
-                        <NavLink to={item.href}>{item.name}</NavLink>
+                        <NavLink onClick={handleComponentClick}
+                                 to={item.href}>{item.name}</NavLink>
                     </Disclosure.Button>))}
                 </div>
             </Disclosure.Panel>
+            <div>
+                {isDivVisible && <div>
+                    <Hero/>
+                </div>}
+
+            </div>
+
 
         </>)}
     </Disclosure>)
