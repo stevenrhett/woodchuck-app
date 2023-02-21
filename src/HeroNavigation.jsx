@@ -17,9 +17,9 @@ export default function HeroNavigation() {
         setIsDivVisible(!isDivVisible);
     }
 
-    return (<Disclosure as="nav" className="mx-auto bg-slate-900">
+    return (<Disclosure as="nav" className="mx-auto bg-slate-700">
         {({open}) => (<>
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 justify-between">
                     <div className="flex">
                         <div className="flex flex-shrink-0 items-center">
@@ -83,10 +83,10 @@ export default function HeroNavigation() {
                 </div>
             </div>
 
-            <Disclosure.Panel className="lg:hidden"
+            <Disclosure.Panel className="bg-slate-700lg:hidden"
             >
                 <div>
-                    <div className="space-y-1 pt-2 pb-3">
+                    <div className="space-y-1 pt-2 pb-3 opacity-95">
                         <div className="pt-2 pb-3">
                             <Disclosure.Button
                                 className="block border-l-2 font-medium text-white hover:bg-gray-100 hover:text-lg hover:rounded hover:text-gray-500 focus sm:pl-5 sm:pr-6"

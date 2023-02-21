@@ -16,7 +16,8 @@ const people = [{
 },];
 
 export default function Staff() {
-    return (<div className="max-w-2xl mx-auto rounded-md shadow-md">
+    return (
+        <div className="max-w-2xl mx-auto rounded-md shadow-md">
         <div className="bg-gray-900">
             <div className="mx-auto max-w-2xl py-6 px-6 lg:px-8 lg:py-8">
                 <div className="space-y-4">

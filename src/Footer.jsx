@@ -16,19 +16,19 @@ const towns = [{town: 'Abington', id: 1}, {town: 'Braintree', id: 2}, {town: 'Ca
 
 const Footer = () => {
     return (<>
-        <div className="max-w-2xl mx-auto rounded-md shadow-md">
+        <div className="footer mx-auto rounded-md shadow-md">
 
-            <footer className="bottom-2 bg-slate-700 footer rounded-md p-1">
+            <footer className="bottom-2 footer bg-slate-700 rounded-md p-1">
                 <div
-                    className="mx-auto flex flex-wrap items-center justify-between max-w-2xl sm:px-4 lg:px-8">
+                    className="mx-auto flex flex-wrap items-center justify-between footer sm:px-4 lg:px-8">
                     <div className="lg:mb-0 w-full lg:w-6/12 lg:mb-0">
 
-                        <h1 className="mt-6 font-semibold brightness-100 lg:mb-4 block ml-6 text-3xl text-gray-100">
+                        <h1 className="mt-6 text-3xl font-extrabold text-white sm:semibold">
                             Service Area
                         </h1>
                     </div>
-                    <div className="w-full lg:w-6/12 lg:text-md">
-                        <div className="sm:mb-4 ">
+                    <div className="footer lg:w-6/12 lg:text-md">
+                        <div className="sm:mb-4">
                             <div
                                 className="text-gray-100 font-semibold brightness-100 text-center justify-between columns-3">
                                 {towns.map((town, id) => {
