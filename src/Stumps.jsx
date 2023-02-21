@@ -6,7 +6,7 @@ export default function Stumps() {
         <div className="carousel-item lg:w-full relative object-cover">
             <img
                 src='https://img1.wsimg.com/isteam/ip/bb7c43a1-5fb1-48cd-8f08-37327b4f7a53/Resized_Resized_20220526_161746(1).jpeg/:/cr'
-                alt=""
+                alt="Woodchuck staff at work"
                 className="rounded lg:w-full lg:h-full object-cover"/>
             <div className="absolute flex justify-between transform -translate-y-1/2 left-20 top-10">
                 <div className="absolute animate-bounce hover:bg-primary bg-primary btn btn-circle w-24 h-20">
@@ -22,31 +22,31 @@ export default function Stumps() {
         <div className="carousel-item lg:w-full  object-cover">
             <img
                 src='https://img1.wsimg.com/isteam/ip/bb7c43a1-5fb1-48cd-8f08-37327b4f7a53/Resized_Resized_20220514_153612.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:540,cg:true '
-                alt=""
+                alt="Woodchuck staff at work"
                 className="rounded lg:w-full lg:h-full object-cover"/>
         </div>
         <div className="carousel-item lg:w-full  object-cover">
             <img
                 src='https://img1.wsimg.com/isteam/ip/bb7c43a1-5fb1-48cd-8f08-37327b4f7a53/Resized_Resized_20220514_123622.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:540,cg:true'
-                alt=""
+                alt="Woodchuck staff at work"
                 className="rounded lg:w-full lg:h-full object-cover"/>
         </div>
         <div className="carousel-item lg:w-full  object-cover">
             <img
                 src='https://img1.wsimg.com/isteam/ip/bb7c43a1-5fb1-48cd-8f08-37327b4f7a53/Resized_Resized_20220526_161746(1).jpeg/:/cr '
-                alt=""
+                alt="Woodchuck staff at work"
                 className="rounded lg:w-full lg:h-full object-cover"/>
         </div>
         <div className="carousel-item lg:w-full  object-cover">
             <img
                 src='https://img1.wsimg.com/isteam/ip/bb7c43a1-5fb1-48cd-8f08-37327b4f7a53/Resized_Resized_20220526_115350.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:540,cg:true '
-                alt=""
+                alt="Woodchuck staff at work"
                 className="rounded lg:w-full lg:h-full object-cover"/>
         </div>
         <div className="carousel-item lg:w-full  object-cover">
             <img
                 src='https://img1.wsimg.com/isteam/ip/bb7c43a1-5fb1-48cd-8f08-37327b4f7a53/Resized_Resized_20220514_153612.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:540,cg:true '
-                alt=""
+                alt="Woodchuck staff at work"
                 className="rounded lg:w-full lg:h-full object-cover"/>
         </div>
         <div className="carousel-item lg:w-full relative object-cover">

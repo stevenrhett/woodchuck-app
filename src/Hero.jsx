@@ -10,7 +10,7 @@ export default function Hero(divVisible) {
                 {divVisible && <div>
                     <div className="md:flex bg-base-100">
                         <div className="md:shrink-0">
-                            <img className="h-auto rounded bg-base w-fit overflow-hidden mx-auto object-cover"
+                            <img className="h-fit rounded bg-base w-fit overflow-hidden mx-auto object-cover"
                                  src={TimAtWork} alt="Tim At Work"/>
                         </div>
                         <div className="py-6 flex flex-col">
