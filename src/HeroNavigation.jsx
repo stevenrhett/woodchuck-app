@@ -17,9 +17,10 @@ export default function HeroNavigation() {
         setIsDivVisible(!isDivVisible);
     }
 
-    return (<Disclosure as="nav" className="mx-auto bg-slate-700">
+
+    return (<Disclosure as="nav" className="bg-slate-700 w-full mx-auto">
         {({open}) => (<>
-            <div className="mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-slate-700 mx-auto max-w-7x px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 justify-between">
                     <div className="flex">
                         <div className="flex flex-shrink-0 items-center">

@@ -1,6 +1,6 @@
 import {Outlet} from "react-router-dom"
-import Footer from "./Footer.jsx";
 import HeroNavigation from "./HeroNavigation.jsx";
+import Footer from "./Footer.jsx";
 
 
 function RootLayout() {
@@ -10,6 +10,7 @@ function RootLayout() {
             <HeroNavigation/>
             <Outlet/>
             <Footer/>
+
         </>
     )
 }

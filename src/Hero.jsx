@@ -6,7 +6,7 @@ export default function Hero(divVisible) {
 
     return (
         <>
-            <div className="max-w-2xl bg-white mx-auto rounded-md">
+            <div className="max-w-7xl bg-white mx-auto rounded-md">
                 {divVisible && <div>
                     <div className="md:flex bg-base-100">
                         <div className="md:shrink-0">

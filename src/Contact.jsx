@@ -3,7 +3,7 @@ import React from "react"
 export default function Contact() {
 
     return (<>
-        <div className="max-w-2xl mx-auto rounded-md shadow-md md:max-w-2xl justify-center items-center">
+        <div className="max-w-7xl bg-white mx-auto rounded-md">
 
             <div className="bg-slate-900 text-gray-100">
                 <div className="text-gray-100 px-6 py-10 mx-auto grid lg:py-16">
