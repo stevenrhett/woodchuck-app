@@ -10,8 +10,6 @@ function RootLayout() {
             <HeroNavigation/>
             <Outlet/>
             <Footer/>
-
-
         </>
     )
 }
