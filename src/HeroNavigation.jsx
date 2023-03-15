@@ -9,7 +9,7 @@ import TreeStump from "./assets/tree-stump.png"
 export default function HeroNavigation() {
     const shoot = () => {
         alert("If you are getting this message mention ALERT20 " +
-            "and we will give you 20 % of your next service." + "Thanks");
+            "and we will give you 20 % off your next service." + "Thanks");
     }
     const [isDivVisible, setIsDivVisible] = useState(true);
 
